@@ -29,7 +29,7 @@ class Comongo_Connection
         'timeout'    => null,
     );
 
-    public function __constrcut($options = array())
+    public function __construct($options = array())
     {
         if (!extension_loaded('mongo')) {
             throw new Comongo_Connection_Exception("The mongo extension is required: http://pecl.php.net/package/mongo");
